@@ -27,11 +27,13 @@ def load_topology():
 
 @app.route('/api/topology/save', methods=['POST'])
 def save_topology():
-    global topology_data
     try:
         data = request.get_json()
         dns_name = data.get("dnsName") or "Remote Surgery"
-        
+
+        # Declare topology_data as global to update the global variable
+        global topology_data
+
         # Validate and update topology_data with posted data
         topology_data = {
             "numUPFs": data.get("numUPFs", 0),
@@ -39,11 +41,14 @@ def save_topology():
             "numGNBs": data.get("numGNBs", 0),
             "gnbAssignments": data.get("gnbAssignments", {}),
             "links": data.get("links", []),
+            "dnsName": dns_name,
             "dnsUpfConnections": data.get("dnsUpfConnections", [])
         }
+        print("Topology Data:", topology_data)  # Ensure this line is present
         return jsonify({"status": "success", "message": "Topology saved."})
     except Exception as e:
         return jsonify({"status": "error", "message": str(e)}), 400
+
 
 @app.route('/api/topology/reset', methods=['POST'])
 def reset_topology():
@@ -90,8 +95,39 @@ static_topology_data = {
     "dnsUpfConnections": [4]  # Only central UPF connects to DNS
 }
 
+
+
+def convert_topology_data(saved_data):
+    """Convert saved topology data to visualization format"""
+    # Calculate positions for UPFs in a grid pattern
+    num_upfs = saved_data.get("numUPFs", 0)
+    upf_coords = []
+    
+    if num_upfs > 0:
+        rows = int(num_upfs ** 0.5) + 1
+        cols = rows
+        
+        for i in range(num_upfs):
+            row = i // cols
+            col = i % cols
+            x = (col + 1) / (cols + 1)
+            y = (row + 1) / (rows + 1)
+            upf_coords.append({"x": x, "y": y})
+    
+    return {
+        "upfCoords": upf_coords,
+        "gnbAssignments": saved_data.get("gnbAssignments", {}),
+        "links": saved_data.get("links", []),
+        "dnsName": saved_data.get("dnsName", "Remote Surgery"),
+        "dnsUpfConnections": saved_data.get("dnsUpfConnections", [])
+    }
+
+
 @app.route('/api/simulation/static_topology', methods=['GET'])
 def get_static_topology():
+    static_topology_data = convert_topology_data(topology_data)
+    print(static_topology_data)
+
     return static_topology_data
 
 @app.route('/api/network-metrics', methods=['GET'])

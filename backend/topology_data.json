@@ -1,0 +1,30 @@
+{
+  "current": {
+    "upfConfigs": [
+      {
+        "type": "edge",
+        "x": "3",
+        "y": "20"
+      },
+      {
+        "type": "PCA",
+        "x": "3",
+        "y": "1"
+      }
+    ],
+    "gnbAssignments": {
+      "0": [
+        1
+      ],
+      "1": [
+        1
+      ]
+    },
+    "links": [],
+    "dnsUpfConnections": [
+      1
+    ],
+    "numGNBs": 2,
+    "numUPFs": 2
+  }
+}

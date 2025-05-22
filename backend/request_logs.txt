@@ -1,0 +1,749 @@
+{
+  "timestamp": "2025-05-21 23:11:16",
+  "data": {
+    "upfConfigs": [
+      {
+        "type": "PCA",
+        "x": "1",
+        "y": "2"
+      },
+      {
+        "type": "edge",
+        "x": "2",
+        "y": "1"
+      }
+    ],
+    "gnbAssignments": {
+      "0": [
+        1
+      ],
+      "1": [
+        1
+      ]
+    },
+    "links": [],
+    "dnsName": "",
+    "dnsUpfConnections": [
+      0
+    ],
+    "numUEs": "",
+    "numGNBs": 2,
+    "numUPFs": 2
+  }
+},
+{
+  "timestamp": "2025-05-21 23:18:51",
+  "data": {
+    "upfConfigs": [
+      {
+        "type": "PCA",
+        "x": "1",
+        "y": "2"
+      },
+      {
+        "type": "edge",
+        "x": "2",
+        "y": "1"
+      }
+    ],
+    "gnbAssignments": {
+      "0": [
+        1
+      ],
+      "1": [
+        1
+      ]
+    },
+    "links": [],
+    "dnsName": "",
+    "dnsUpfConnections": [
+      0
+    ],
+    "numUEs": "",
+    "numGNBs": 2,
+    "numUPFs": 2
+  }
+},
+{
+  "timestamp": "2025-05-21 23:19:43",
+  "data": {
+    "upfConfigs": [
+      {
+        "type": "PCA",
+        "x": "1",
+        "y": "2"
+      },
+      {
+        "type": "edge",
+        "x": "2",
+        "y": "1"
+      }
+    ],
+    "gnbAssignments": {
+      "0": [
+        1
+      ],
+      "1": [
+        1
+      ]
+    },
+    "links": [],
+    "dnsName": "",
+    "dnsUpfConnections": [
+      0
+    ],
+    "numUEs": "",
+    "numGNBs": 2,
+    "numUPFs": 2
+  }
+},
+{
+  "timestamp": "2025-05-21 23:22:13",
+  "data": {
+    "upfConfigs": [
+      {
+        "type": "PCA",
+        "x": "1",
+        "y": "2"
+      },
+      {
+        "type": "edge",
+        "x": "2",
+        "y": "1"
+      }
+    ],
+    "gnbAssignments": {
+      "0": [
+        1
+      ],
+      "1": [
+        1
+      ]
+    },
+    "links": [],
+    "dnsName": "",
+    "dnsUpfConnections": [
+      0
+    ],
+    "numUEs": "",
+    "numGNBs": 2,
+    "numUPFs": 2
+  }
+},
+{
+  "timestamp": "2025-05-21 23:26:29",
+  "data": {
+    "upfConfigs": [
+      {
+        "type": "PCA",
+        "x": "1",
+        "y": "2"
+      },
+      {
+        "type": "edge",
+        "x": "2",
+        "y": "1"
+      }
+    ],
+    "gnbAssignments": {
+      "0": [
+        1
+      ],
+      "1": [
+        1
+      ]
+    },
+    "links": [],
+    "dnsName": "",
+    "dnsUpfConnections": [
+      0
+    ],
+    "numUEs": "",
+    "numGNBs": 2,
+    "numUPFs": 2
+  }
+},
+{
+  "timestamp": "2025-05-21 23:26:39",
+  "data": {
+    "upfConfigs": [
+      {
+        "type": "PCA",
+        "x": "1",
+        "y": "2"
+      },
+      {
+        "type": "edge",
+        "x": "2",
+        "y": "1"
+      }
+    ],
+    "gnbAssignments": {
+      "0": [
+        1
+      ],
+      "1": [
+        1
+      ]
+    },
+    "links": [],
+    "dnsName": "",
+    "dnsUpfConnections": [
+      0
+    ],
+    "numUEs": "",
+    "numGNBs": 2,
+    "numUPFs": 2
+  }
+},
+{
+  "timestamp": "2025-05-21 23:28:51",
+  "data": {
+    "upfConfigs": [
+      {
+        "type": "PCA",
+        "x": "3",
+        "y": "2"
+      },
+      {
+        "type": "edge",
+        "x": "3",
+        "y": "1"
+      }
+    ],
+    "gnbAssignments": {
+      "0": [
+        1
+      ],
+      "1": [
+        1
+      ]
+    },
+    "links": [],
+    "dnsName": "",
+    "dnsUpfConnections": [
+      0
+    ],
+    "numUEs": "",
+    "numGNBs": 2,
+    "numUPFs": 2
+  }
+},
+{
+  "timestamp": "2025-05-21 23:31:57",
+  "data": {
+    "upfConfigs": [
+      {
+        "type": "PCA",
+        "x": "3",
+        "y": "2"
+      },
+      {
+        "type": "edge",
+        "x": "3",
+        "y": "1"
+      }
+    ],
+    "gnbAssignments": {
+      "0": [
+        1
+      ],
+      "1": [
+        1
+      ]
+    },
+    "links": [],
+    "dnsName": "",
+    "dnsUpfConnections": [
+      0
+    ],
+    "numUEs": "",
+    "numGNBs": 2,
+    "numUPFs": 2
+  }
+},
+{
+  "timestamp": "2025-05-21 23:32:11",
+  "data": {
+    "upfConfigs": [
+      {
+        "type": "PCA",
+        "x": "3",
+        "y": "2"
+      },
+      {
+        "type": "edge",
+        "x": "3",
+        "y": "1"
+      }
+    ],
+    "gnbAssignments": {
+      "0": [
+        1
+      ],
+      "1": [
+        1
+      ]
+    },
+    "links": [],
+    "dnsName": "",
+    "dnsUpfConnections": [
+      0
+    ],
+    "numUEs": "",
+    "numGNBs": 2,
+    "numUPFs": 2
+  }
+},
+{
+  "timestamp": "2025-05-21 23:32:46",
+  "data": {
+    "upfConfigs": [
+      {
+        "type": "PCA",
+        "x": "3",
+        "y": "2"
+      },
+      {
+        "type": "edge",
+        "x": "3",
+        "y": "1"
+      }
+    ],
+    "gnbAssignments": {
+      "0": [
+        1
+      ],
+      "1": [
+        1
+      ]
+    },
+    "links": [],
+    "dnsName": "",
+    "dnsUpfConnections": [
+      0
+    ],
+    "numUEs": "",
+    "numGNBs": 2,
+    "numUPFs": 2
+  }
+},
+{
+  "timestamp": "2025-05-21 23:32:49",
+  "data": {
+    "upfConfigs": [
+      {
+        "type": "PCA",
+        "x": "3",
+        "y": "2"
+      },
+      {
+        "type": "edge",
+        "x": "3",
+        "y": "1"
+      }
+    ],
+    "gnbAssignments": {
+      "0": [
+        1
+      ],
+      "1": [
+        1
+      ]
+    },
+    "links": [],
+    "dnsName": "",
+    "dnsUpfConnections": [
+      0
+    ],
+    "numUEs": "",
+    "numGNBs": 2,
+    "numUPFs": 2
+  }
+},
+{
+  "timestamp": "2025-05-21 23:32:50",
+  "data": {
+    "upfConfigs": [
+      {
+        "type": "PCA",
+        "x": "3",
+        "y": "2"
+      },
+      {
+        "type": "edge",
+        "x": "3",
+        "y": "1"
+      }
+    ],
+    "gnbAssignments": {
+      "0": [
+        1
+      ],
+      "1": [
+        1
+      ]
+    },
+    "links": [],
+    "dnsName": "",
+    "dnsUpfConnections": [
+      0
+    ],
+    "numUEs": "",
+    "numGNBs": 2,
+    "numUPFs": 2
+  }
+},
+{
+  "timestamp": "2025-05-21 23:32:50",
+  "data": {
+    "upfConfigs": [
+      {
+        "type": "PCA",
+        "x": "3",
+        "y": "2"
+      },
+      {
+        "type": "edge",
+        "x": "3",
+        "y": "1"
+      }
+    ],
+    "gnbAssignments": {
+      "0": [
+        1
+      ],
+      "1": [
+        1
+      ]
+    },
+    "links": [],
+    "dnsName": "",
+    "dnsUpfConnections": [
+      0
+    ],
+    "numUEs": "",
+    "numGNBs": 2,
+    "numUPFs": 2
+  }
+},
+{
+  "timestamp": "2025-05-21 23:32:50",
+  "data": {
+    "upfConfigs": [
+      {
+        "type": "PCA",
+        "x": "3",
+        "y": "2"
+      },
+      {
+        "type": "edge",
+        "x": "3",
+        "y": "1"
+      }
+    ],
+    "gnbAssignments": {
+      "0": [
+        1
+      ],
+      "1": [
+        1
+      ]
+    },
+    "links": [],
+    "dnsName": "",
+    "dnsUpfConnections": [
+      0
+    ],
+    "numUEs": "",
+    "numGNBs": 2,
+    "numUPFs": 2
+  }
+},
+{
+  "timestamp": "2025-05-21 23:32:50",
+  "data": {
+    "upfConfigs": [
+      {
+        "type": "PCA",
+        "x": "3",
+        "y": "2"
+      },
+      {
+        "type": "edge",
+        "x": "3",
+        "y": "1"
+      }
+    ],
+    "gnbAssignments": {
+      "0": [
+        1
+      ],
+      "1": [
+        1
+      ]
+    },
+    "links": [],
+    "dnsName": "",
+    "dnsUpfConnections": [
+      0
+    ],
+    "numUEs": "",
+    "numGNBs": 2,
+    "numUPFs": 2
+  }
+},
+{
+  "timestamp": "2025-05-21 23:34:43",
+  "data": {
+    "upfConfigs": [
+      {
+        "type": "PCA",
+        "x": "3",
+        "y": "2"
+      },
+      {
+        "type": "edge",
+        "x": "3",
+        "y": "1"
+      }
+    ],
+    "gnbAssignments": {
+      "0": [
+        1
+      ],
+      "1": [
+        1
+      ]
+    },
+    "links": [],
+    "dnsName": "",
+    "dnsUpfConnections": [
+      0
+    ],
+    "numUEs": "",
+    "numGNBs": 2,
+    "numUPFs": 2
+  }
+},
+{
+  "timestamp": "2025-05-21 23:34:45",
+  "data": {
+    "upfConfigs": [
+      {
+        "type": "PCA",
+        "x": "3",
+        "y": "2"
+      },
+      {
+        "type": "edge",
+        "x": "3",
+        "y": "1"
+      }
+    ],
+    "gnbAssignments": {
+      "0": [
+        1
+      ],
+      "1": [
+        1
+      ]
+    },
+    "links": [],
+    "dnsName": "",
+    "dnsUpfConnections": [
+      0
+    ],
+    "numUEs": "",
+    "numGNBs": 2,
+    "numUPFs": 2
+  }
+},
+{
+  "timestamp": "2025-05-21 23:34:50",
+  "data": {
+    "upfConfigs": [
+      {
+        "type": "PCA",
+        "x": "3",
+        "y": "2"
+      },
+      {
+        "type": "edge",
+        "x": "3",
+        "y": "1"
+      }
+    ],
+    "gnbAssignments": {
+      "0": [
+        1
+      ],
+      "1": [
+        1
+      ]
+    },
+    "links": [],
+    "dnsName": "",
+    "dnsUpfConnections": [
+      0
+    ],
+    "numUEs": "",
+    "numGNBs": 2,
+    "numUPFs": 2
+  }
+},
+{
+  "timestamp": "2025-05-21 23:36:50",
+  "data": {
+    "upfConfigs": [
+      {
+        "type": "PCA",
+        "x": "3",
+        "y": "2"
+      },
+      {
+        "type": "edge",
+        "x": "3",
+        "y": "1"
+      }
+    ],
+    "gnbAssignments": {
+      "0": [
+        1
+      ],
+      "1": [
+        1
+      ]
+    },
+    "links": [],
+    "dnsUpfConnections": [
+      0
+    ],
+    "numGNBs": 2,
+    "numUPFs": 2
+  }
+},
+{
+  "timestamp": "2025-05-21 23:45:47",
+  "data": {
+    "upfConfigs": [
+      {
+        "type": "PCA",
+        "x": "3",
+        "y": "2"
+      },
+      {
+        "type": "edge",
+        "x": "3",
+        "y": "1"
+      }
+    ],
+    "gnbAssignments": {
+      "0": [
+        1
+      ],
+      "1": [
+        1
+      ]
+    },
+    "links": [],
+    "dnsUpfConnections": [
+      0
+    ],
+    "numGNBs": 2,
+    "numUPFs": 2
+  }
+},
+{
+  "timestamp": "2025-05-21 23:46:05",
+  "data": {
+    "upfConfigs": [
+      {
+        "type": "edge",
+        "x": "3",
+        "y": "2"
+      },
+      {
+        "type": "PCA",
+        "x": "3",
+        "y": "1"
+      }
+    ],
+    "gnbAssignments": {
+      "0": [
+        1
+      ],
+      "1": [
+        1
+      ]
+    },
+    "links": [],
+    "dnsUpfConnections": [
+      1
+    ],
+    "numGNBs": 2,
+    "numUPFs": 2
+  }
+},
+{
+  "timestamp": "2025-05-22 00:36:56",
+  "data": {
+    "upfConfigs": [
+      {
+        "type": "edge",
+        "x": "3",
+        "y": "2"
+      },
+      {
+        "type": "PCA",
+        "x": "3",
+        "y": "1"
+      }
+    ],
+    "gnbAssignments": {
+      "0": [
+        1
+      ],
+      "1": [
+        1
+      ]
+    },
+    "links": [],
+    "dnsUpfConnections": [
+      1
+    ],
+    "numGNBs": 2,
+    "numUPFs": 2
+  }
+},
+{
+  "timestamp": "2025-05-22 00:37:07",
+  "data": {
+    "upfConfigs": [
+      {
+        "type": "edge",
+        "x": "3",
+        "y": "20"
+      },
+      {
+        "type": "PCA",
+        "x": "3",
+        "y": "1"
+      }
+    ],
+    "gnbAssignments": {
+      "0": [
+        1
+      ],
+      "1": [
+        1
+      ]
+    },
+    "links": [],
+    "dnsUpfConnections": [
+      1
+    ],
+    "numGNBs": 2,
+    "numUPFs": 2
+  }
+},

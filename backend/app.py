@@ -134,9 +134,9 @@ def get_static_topology():
 def get_network_metrics():
     # In a real application, these values might be fetched from a database or calculated dynamically
     metrics = {
-        'latency': 4,
+        'latency': 1,
         'packetLoss': 2,
-        'jitter': 2
+        'jitter': 1
     }
     return jsonify(metrics)
 

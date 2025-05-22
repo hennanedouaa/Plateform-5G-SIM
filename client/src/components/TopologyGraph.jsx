@@ -73,7 +73,7 @@ const TopologyGraph = ({ upfCoords, gnbAssignments, links, dnsName, dnsUpfConnec
       ...link,
       source,
       target,
-      interfaceType: link.type === "upf-upf" ? "N9" : 
+      interfaceType: link.type === "upf-upf" ? "N9" :
                    link.type === "gnb-upf" ? "N3" :
                    link.type === "upf-dns" ? "N6" : "",
       // Add specific color for gNB-UPF links
@@ -85,7 +85,7 @@ const TopologyGraph = ({ upfCoords, gnbAssignments, links, dnsName, dnsUpfConnec
   Object.entries(gnbAssignments).forEach(([gnbId, upfIndices]) => {
     const gnbIndex = parseInt(gnbId);
     upfIndices.forEach(upfIndex => {
-      if (!processedLinks.some(l => 
+      if (!processedLinks.some(l =>
         (l.source === gnbPositions[gnbIndex] && l.target === upfPositions[upfIndex]) ||
         (l.source === upfPositions[upfIndex] && l.target === gnbPositions[gnbIndex])
       )) {
@@ -160,7 +160,7 @@ const TopologyGraph = ({ upfCoords, gnbAssignments, links, dnsName, dnsUpfConnec
   const renderNodeIcon = (node) => {
     const radius = getNodeRadius(node.type);
     const iconProps = {
-      style: { 
+      style: {
         fontSize: radius * 1.2,
         color: getNodeColor(node.type)
       }
@@ -189,6 +189,83 @@ const TopologyGraph = ({ upfCoords, gnbAssignments, links, dnsName, dnsUpfConnec
       default: return "#666";
     }
   };
+
+  // Function to calculate Euclidean distance between two nodes
+  const calculateDistance = (node1, node2) => {
+    const dx = node1.x - node2.x;
+    const dy = node1.y - node2.y;
+    return Math.sqrt(dx * dx + dy * dy);
+  };
+
+  // Dijkstra's algorithm to find the shortest path
+  const dijkstra = (startNode, endNode, nodes) => {
+    const distances = {};
+    const previous = {};
+    const visited = new Set();
+    const unvisited = new Set(nodes);
+
+    nodes.forEach(node => {
+      distances[node.id] = node === startNode ? 0 : Infinity;
+      previous[node.id] = null;
+    });
+
+    while (unvisited.size) {
+      const current = Array.from(unvisited).reduce((minNode, node) =>
+        distances[node.id] < distances[minNode.id] ? node : minNode, Array.from(unvisited)[0]);
+
+      unvisited.delete(current);
+      visited.add(current);
+
+      if (current === endNode) break;
+
+      nodes.forEach(node => {
+        if (!visited.has(node) && node !== current) {
+          const alt = distances[current.id] + calculateDistance(current, node);
+          if (alt < distances[node.id]) {
+            distances[node.id] = alt;
+            previous[node.id] = current;
+          }
+        }
+      });
+    }
+
+    const path = [];
+    let current = endNode;
+    while (current) {
+      path.unshift(current);
+      current = previous[current.id];
+    }
+
+    return path;
+  };
+
+  // Add shortest path links between UPFs
+  for (let i = 0; i < upfPositions.length; i++) {
+    for (let j = i + 1; j < upfPositions.length; j++) {
+      const start = upfPositions[i];
+      const end = upfPositions[j];
+      const path = dijkstra(start, end, upfPositions);
+
+      for (let k = 0; k < path.length - 1; k++) {
+        const source = path[k];
+        const target = path[k + 1];
+
+        if (!processedLinks.some(l =>
+          (l.source === source && l.target === target) ||
+          (l.source === target && l.target === source)
+        )) {
+          processedLinks.push({
+            source,
+            target,
+            type: "upf-upf",
+            interfaceType: "N9",
+            stroke: "#2563eb",
+            strokeWidth: 2
+          });
+        }
+      }
+    }
+  }
 
   const allNodes = [...upfPositions, ...gnbPositions, ...uePositions, dnsPosition];
 
@@ -234,7 +311,7 @@ const TopologyGraph = ({ upfCoords, gnbAssignments, links, dnsName, dnsUpfConnec
         {/* Render all nodes */}
         {allNodes.map((node) => {
           const radius = getNodeRadius(node.type);
-          const fillColor = node.type === "upf" ? "#dbeafe" : 
+          const fillColor = node.type === "upf" ? "#dbeafe" :
                           node.type === "dns" ? "#f5f3ff" : "#fff";
 
           return (
@@ -254,7 +331,7 @@ const TopologyGraph = ({ upfCoords, gnbAssignments, links, dnsName, dnsUpfConnec
                 height={radius * 2}
                 style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}
               >
-                <div style={{ 
+                <div style={{
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
